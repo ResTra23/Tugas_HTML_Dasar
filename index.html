@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resa Saputra</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nama Mahasiswa</h1>
+        <p>Mahasiswa Informatika | Web Learner</p>
+    </header>
+    <h1>Profil Mahasiswa</h1>
+    <p>Halaman HTML pertama saya.</p>
+
+    <!-- Teks, Hierarki, dan Semantic HTML -->
+    <nav>
+        <a href="#tentang">Tentang</a> |
+        <a href="#pendidikan">Pendidikan</a> |
+        <a href="#kontak">Kontak </a> |
+        <a href="#keahlian">Keahlian </a> |
+        <a href="https://sikad.umkt.ac.id/TampilanSikad/">Sikad</a>
+    </nav>
+    <main>
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Saya sedang belajar <strong>HTML</strong> dan ingin membangun web yang <em>terstruktur</em>.</p>
+        </section>
+
+        <!-- List, Hyperlink, dan Gambar -->
+        <!-- A. List -->
+        <section id="keahlian">
+            <h2>Keahlian yang Sedang Dipelajari</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Git dasar</li>
+                <li>Problem solving</li>
+            </ul>
+            <h3>Target Belajar</h3>
+            <ol>
+                <li>Menguasai struktur HTML</li>
+                <li>Membuat form</li>
+                <li>Membangun halaman portofolio</li>
+            </ol>
+        </section>
+
+        <!-- B. Hyperlink  -->
+        <p> Kunjungi <a href="https://developer.mozilla.org/" target="_blank" rel="noopener"> MDN Web Docs </a>. </p>
+        <p><a href="mailto:nama@example.com">Kirim email</a></p>
+
+        <!-- C. Gambar dan relative path -->
+        <figure> <img src="assets/profil.png" alt="Foto profil Nama Mahasiswa" width="150">
+            <figcaption>Foto profil untuk latihan HTML.</figcaption>
+        </figure>
+
+        <!-- TABLE -->
+        <section id="pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Institusi</th>
+                        <th>Program</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-sekarang</td>
+                        <td>Universitas Contoh</td>
+                        <td>Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>2021-2024</td>
+                        <td>SMA Contoh</td>
+                        <td>IPA</td>
+                    </tr>
+                    <tr>
+                        <td>2025</td>
+                        <td>SD</td>
+                        <td>Penghancuran Perangkat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <form action="https://sikad.umkt.ac.id/TampilanSikad/" method="post">
+                <p>
+                    <label for="nama">Nama:</label><br> <input id="nama" name="nama" type="text" autocomplete="off"
+                        required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br> <input id="email" name="email" type="email" autocomplete="off"
+                        required>
+                </p>
+                <p>
+                    <label for="topik">Topik:</label><br> <select id="topik" name="topik">
+                        <option value="tanya">Pertanyaan</option>
+                        <option value="kolaborasi">Kolaborasi</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="pesan">Pesan:</label><br> <textarea id="pesan" name="pesan" rows="5"
+                        required></textarea>
+                </p>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nama Mahasiswa</p>
+    </footer>
+</body>
+
+</html>
